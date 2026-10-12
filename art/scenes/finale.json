@@ -1,0 +1,10 @@
+{
+  "name": "finale",
+  "clean": "../raw/finale-v1-clean.png",
+  "layers": [
+    { "id": "easel", "method": "diff", "source": "../raw/finale-v1-nopainter.png", "box": [660, 140, 1110, 1350], "threshold": 30 },
+    { "id": "palette", "method": "diff", "source": "../raw/finale-v1-nopainter.png", "box": [1130, 620, 1600, 1360], "threshold": 30 },
+    { "id": "duke", "method": "person", "source": "../raw/finale-v1.png", "box": [1740, 240, 2510, 1350] },
+    { "id": "retoucher", "method": "subject-diff", "source": "../raw/finale-v1.png", "base": "../raw/finale-v1-nopainter.png", "box": [840, 360, 1240, 1400], "threshold": 30 }
+  ]
+}

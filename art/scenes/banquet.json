@@ -1,0 +1,48 @@
+{
+  "name": "banquet",
+  "clean": "../raw/banquet-v1-clean.png",
+  "layers": [
+    {
+      "id": "bertram",
+      "method": "person",
+      "source": "../raw/banquet-v1.png",
+      "box": [
+        1110,
+        300,
+        1840,
+        1060
+      ],
+      "exclude": [
+        [
+          1665,
+          300,
+          1840,
+          960
+        ]
+      ]
+    },
+    {
+      "id": "hat",
+      "method": "diff",
+      "source": "../raw/banquet-v1-removed.png",
+      "box": [
+        900,
+        95,
+        1320,
+        480
+      ],
+      "threshold": 40
+    },
+    {
+      "id": "reflection",
+      "method": "diff",
+      "source": "../raw/banquet-v1-removed.png",
+      "box": [
+        1540,
+        330,
+        1730,
+        560
+      ]
+    }
+  ]
+}

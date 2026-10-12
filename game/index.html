@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Painted Out</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #1b1410; overflow: hidden; overscroll-behavior: none; }
+      /* Dragging to scrub must never scroll or zoom the page on phones. */
+      canvas { touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+      #game { width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "painted-out",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "guard": "bash ../tools/check_v3_api.sh",
+    "build": "npm run typecheck && npm run guard && vite build"
+  },
+  "dependencies": {
+    "phaser": "4.2.1",
+    "zzfx": "1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.2"
+  }
+}

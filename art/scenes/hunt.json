@@ -1,0 +1,42 @@
+{
+  "name": "hunt",
+  "clean": "../raw/hunt-v1-clean.png",
+  "layers": [
+    {
+      "id": "horse",
+      "method": "person",
+      "source": "../raw/hunt-v1-norider.png",
+      "box": [
+        1300,
+        380,
+        2330,
+        1380
+      ]
+    },
+    {
+      "id": "hound",
+      "method": "person",
+      "source": "../raw/hunt-v1-norider.png",
+      "box": [
+        1960,
+        930,
+        2460,
+        1410
+      ]
+    },
+    {
+      "id": "bertram",
+      "method": "subject-diff",
+      "source": "../raw/hunt-v1.png",
+      "base": "../raw/hunt-v1-norider.png",
+      "box": [
+        1520,
+        0,
+        2120,
+        900
+      ],
+      "threshold": 30,
+      "grow": 4
+    }
+  ]
+}

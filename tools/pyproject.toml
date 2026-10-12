@@ -1,0 +1,9 @@
+[project]
+name = "painted-out-tools"
+version = "0.1.0"
+description = "Local asset pipeline for Painted Out: cut-outs and compositing of DreamLayer paintings"
+requires-python = ">=3.11,<3.13"
+dependencies = ["rembg[cpu]>=2.0.85", "numpy", "pillow", "scipy"]
+
+[tool.uv]
+package = false

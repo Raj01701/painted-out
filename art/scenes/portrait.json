@@ -1,0 +1,9 @@
+{
+  "name": "portrait",
+  "clean": "../raw/portrait-v1-clean.png",
+  "layers": [
+    { "id": "twin", "method": "person", "source": "../raw/portrait-v1.png", "box": [80, 80, 900, 1440] },
+    { "id": "bertram", "method": "person", "source": "../raw/portrait-v1.png", "box": [1640, 90, 2530, 1440] },
+    { "id": "cushion", "method": "diff", "source": "../raw/portrait-v1-removed.png", "box": [780, 1180, 1880, 1440], "threshold": 34 }
+  ]
+}

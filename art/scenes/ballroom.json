@@ -1,0 +1,48 @@
+{
+  "name": "ballroom",
+  "clean": "../raw/ballroom-v1-clean.png",
+  "layers": [
+    {
+      "id": "constance",
+      "method": "subject-diff",
+      "source": "../raw/ballroom-v1.png",
+      "base": "../raw/ballroom-v1-nolady.png",
+      "box": [
+        1050,
+        340,
+        1640,
+        1220
+      ],
+      "threshold": 30,
+      "hit": [
+        1250,
+        340,
+        1640,
+        1220
+      ]
+    },
+    {
+      "id": "shawl",
+      "method": "diff",
+      "source": "../raw/ballroom-v1-nolady.png",
+      "box": [
+        1840,
+        620,
+        2560,
+        1260
+      ],
+      "threshold": 34
+    },
+    {
+      "id": "poodle",
+      "method": "person",
+      "source": "../raw/ballroom-v1-nolady.png",
+      "box": [
+        1940,
+        900,
+        2260,
+        1260
+      ]
+    }
+  ]
+}
